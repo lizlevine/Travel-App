@@ -1,4 +1,5 @@
 // import connection from connection.js file
+// query strings here
 var connection = require("./connection.js");
 
 // below is taken from config/index.js file from todo app
