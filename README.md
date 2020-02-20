@@ -1,2 +1,2 @@
-# Travel-App
+# Get Your Trip Together!
 Project 2
