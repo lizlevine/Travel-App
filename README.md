@@ -1,8 +1,4 @@
 # Get Your Trip Together!
-<<<<<<< HEAD
-=======
-
->>>>>>> 5178b97ce0487eeadc9119178f475d6fe4f7fc24
 Project 2
 
 Liz Levine [@lizlevine] https://github.com/lizlevine
