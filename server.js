@@ -1,7 +1,13 @@
-// DEPENDENCIES / require all npm packages here - reference todo app
-// Series of npm packages that we will use to give our server useful functionality
+// DEPENDENCIES (npm packages) / requires to give our server useful functionality
 // ==============================================================================
 // this file creates express connection & runs node server
+
+const express = require("express");
+const app = express();
+const exphbs = require("express-handlebars");
+
+app.engine("handlebars", exphbs());
+app.set("view engine", "handlebars");
 
 app.get("/", (req, res) => {
   res.render("index");
