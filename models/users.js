@@ -1,17 +1,19 @@
-// was orm
-var orm = require('../db');
+module.exports = function(sequelize, DataTypes) {
+  const User = sequelize.define("User", {
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        isEmail: true
+      },
+      unique: true
+    },
+    password: DataTypes.STRING
+  });
 
+  User.associate = function(models) {
+    User.hasMany(models.Trip);
+  };
 
-// * NOW *  sequelize (taken from todo's class app) data for user sign-in
-const sequelize = require('../config');
-const { DataTypes } = require('sequelize');
-
-const User = sequelize.define('User', {
-    //    do we need to capture user id throughout all tables?
-  email: DataTypes.STRING,
-  password: DataTypes.STRING
-});
-
-// table or db name?.sync();
-
-module.exports = User;
+  return User;
+};
