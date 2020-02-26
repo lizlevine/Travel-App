@@ -7,6 +7,7 @@ const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const exphbs = require("express-handlebars");
 const db = require("./models");
+// const dotenv = require('dotenv').config()
 
 const app = express();
 app.engine("handlebars", exphbs());
