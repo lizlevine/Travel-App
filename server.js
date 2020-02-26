@@ -1,5 +1,4 @@
-// DEPENDENCIES / require all npm packages here - reference todo app
-// Series of npm packages that we will use to give our server useful functionality
+// DEPENDENCIES (npm packages) / requires to give our server useful functionality
 // ==============================================================================
 // this file creates express connection & runs node server
 
@@ -8,6 +7,7 @@ const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const exphbs = require("express-handlebars");
 const db = require("./models");
+// const dotenv = require('dotenv').config()
 
 const app = express();
 app.engine("handlebars", exphbs());
