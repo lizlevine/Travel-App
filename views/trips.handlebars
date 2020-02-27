@@ -1,55 +1,157 @@
-<!DOCTYPE html>
+{{!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>forms for travel app</title>
-  <!-- <link
+  <title>forms for travel app</title> --}}
+
+{{!-- <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    /> -->
+    />  --}}
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+{{!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet" />
-  {{!-- <link rel="stylesheet" href="./style.css" /> --}}
-</head>
-
-<body>
-  <h1>Where in the world are you going?</h1>
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet" /> --}}
 
 
-  <div id="main-container" class="container">
-    <section class="container">
-      <img src="assets/images/luggage_logo.png" id="logo" class="suitcase" alt="suitcase">
-      <h2 id="contact">Your trips</h2>
+{{!-- <link rel="stylesheet" href="./style.css" /> --}}
 
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Destination</label>
-            <input type="text" name="name" id="name" placeholder="let's go!" required="required" />
-          </li>
-          {{!-- <li>
+
+{{!-- </head>
+
+<body> --}}
+<nav class="navbar is-white" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <img src="assets/images/luggage_logo.png" id="logo" class="suitcase" alt="suitcase">
+
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+      data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a href="index.html" class="navbar-item">
+
+      </a>
+      <a href="home.html" class="navbar-item">
+
+      </a>
+      <a href="trips.html" class="navbar-item">
+        My Trips
+      </a>
+      <a href="packinglist.html" class="navbar-item">
+        Packing List
+      </a>
+
+      <a href="activities.html" class="navbar-item">
+        Activities
+      </a>
+
+      <a href="departure.html" class="navbar-item">
+        Departure Countdown
+      </a>
+
+    </div>
+  </div>
+  <div class="navbar-end">
+    <div class="navbar-item">
+      <div class="buttons">
+        <a href="/sign-up">
+          <button class="button is-info is-outlined">Sign up</button></a>
+        <a href="/trips"><button class="button is-info is-outlined">My trips</button></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Where in the world are you going?
+      </h1>
+      {{!-- <h2 class="subtitle">Let's<strong> GO </strong>!</h2> --}}
+    </div>
+    {{!-- </div>
+</section> --}}
+
+    <div id="main-container" class="container-home">
+      <section class="main-container">
+
+        <img src="assets/images/globe4_logo.jpg" id="globe" class="suitcase" alt="suitcase">
+
+        {{!-- <h2 class="subtitle">Toss the sticky notes and use our notes instead!</h2> --}}
+
+
+        {{!-- <div id="home-image">
+      <img src="assets/images/happy_traveler_.jpg" class="portrait" id="welcome-home" alt="Eiffel Tower" />
+    </div> --}}
+
+        {{!-- <div id="main-container" class="container">
+          <section class="container"> --}}
+        {{!-- <img src="assets/images/plane_logo.png" id="logo" class="suitcase" alt="suitcase"> --}}
+        {{!-- <h2 id="contact">Your trips</h2> --}}
+        <form action="/api/trips/" method="POST" class="register-form" id="login-form">
+
+          {{!-- <form id="contact-form"> --}}
+          <ul>
+            <li>
+              {{!-- <label for="name">Destination</label> --}}
+              <label id="destination">Destination</label>
+              <input type="text" name="name" id="name" placeholder="let's go!" required="required" />
+            </li>
+            {{!-- <li>
             <label for="email">departure date</label>
             <input type="text" name="email" id="email" placeholder="mm/dd/year" required="required" />
           </li> --}}
 
-          <h4>Toss the sticky notes and use ours instead!</h4>
-          <li>
-            <label for="message">Notes</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
+            <h4 id="notes">Remember this ...</h4>
+            <li>
+              {{!-- <label for="message">Notes</label> --}}
+              <label id="note-label">Notes</label>
+              <textarea id="message" name="message" required="required"></textarea>
+              {{!-- <input type="text" name="name" id="message" placeholder="anything goes!" required="required" /> --}}
 
+            </li>
+          </ul>
+          <button id="button">Save</button>
+    </div>
+</section>
+{{!-- <button class="button">Button</button> --}}
+{{!-- <input type="submit" name="submit" id="button" /> --}}
+</form>
+{{!-- </section> --}}
+</div>
+
+{{!-- </section>
+</div> --}}
+
+</div>
+</section>
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>"Check-in" with us to receive the latest <strong>promos</strong> and travel swag.</p>
+
+    <div id="connect">
+      {{!-- <h6>"Check-in" with us for <strong>promos</strong> and travel swag!</h6> --}}
+      <img src="assets/images/pintrest.png" class="social" alt="Pintrest icon" />
+      <img src="assets/images/fb_logo.png" class="social" alt="Facebook icon" />
+      <img src="assets/images/airbnb.png" class="social" alt="Airbnb icon" />
+      <img src="assets/images/instagram.png" class="social" alt="Instagram icon" />
+      <img src="assets/images/yelp.png" class="social" alt="Yelp icon" />
+    </div>
+
+    <p id="copyright">
+      &copy; Copyright 2020 Get Your Trip Together!
+    </p>
   </div>
-  </section>
-
-  <input type="submit" name="submit" id="button" />
-  </form>
-  </section>
-  </div>
-</body>
-
-</html>
+</footer>

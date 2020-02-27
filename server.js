@@ -21,7 +21,7 @@ app.use(express.static(__dirname + "/public"));
 app.get("/trips", (req, res) => {
   res.render("trips");
 });
-
+// below gets data from form.handlebars
 app.get("/sign-up", (req, res) => {
   res.render("form");
 });
