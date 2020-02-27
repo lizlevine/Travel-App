@@ -115,6 +115,7 @@ h5 {
 
 #main-container {
   max-height: 500px;
+  max-width: 850px;
   overflow-y: scroll;
   /* max-height: 365px; */
 }
@@ -147,6 +148,11 @@ h5 {
   cursor: pointer;
 }
 
+#globe {
+  height: 100px;
+  width: 100px;
+}
+
 #logo img:hover {
   transform: scale(1.25);
 }
@@ -170,7 +176,7 @@ h5 {
   border-top: 5px solid palegoldenrod;
   font-size: 13px;
   text-align: center;
-  height: 100px;
+  height: 85px;
   /* position: absolute; */
   position: fixed;
   width: 100%;
@@ -199,10 +205,12 @@ h5 {
 }
 
 #button {
-  margin-left: 20px;
-  padding: 12px;
+  margin-left: 68px;
+  margin-top: 20px;
+  width: 100px;
+  padding: 15px;
   background-color: lightcyan;
-  border: solid 1px lightgrey;
+  border: solid 2px lightgrey;
   cursor: pointer;
 }
 
@@ -211,4 +219,35 @@ h5 {
   display: inline-block;
   margin-left: 10px;
   text-align: center;
+}
+
+/* trips form */
+
+#message {
+  height: 150px;
+  width: 620px;
+  cursor: pointer;
+  border: solid 1px lightgrey;
+}
+
+#name {
+  height: 30px;
+  width: 580px;
+  margin-top: 10px;
+  /* margin-bottom: 30px; */
+  cursor: pointer;
+  border: solid 1px lightgrey;
+}
+
+#notes {
+  padding-top: 40px;
+}
+
+#note-label {
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+
+#destination {
+  margin-right: 20px;
 }
