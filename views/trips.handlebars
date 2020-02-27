@@ -71,6 +71,7 @@
   </div>
 </nav>
 
+
 <section class="hero">
   <div class="hero-body">
     <div class="container">
@@ -98,8 +99,9 @@
           <section class="container"> --}}
         {{!-- <img src="assets/images/plane_logo.png" id="logo" class="suitcase" alt="suitcase"> --}}
         {{!-- <h2 id="contact">Your trips</h2> --}}
+        <form action="/api/trips/" method="POST" class="register-form" id="login-form">
 
-        <form id="contact-form">
+          {{!-- <form id="contact-form"> --}}
           <ul>
             <li>
               {{!-- <label for="name">Destination</label> --}}
@@ -126,7 +128,7 @@
 {{!-- <button class="button">Button</button> --}}
 {{!-- <input type="submit" name="submit" id="button" /> --}}
 </form>
-</section>
+{{!-- </section> --}}
 </div>
 
 {{!-- </section>
@@ -153,10 +155,3 @@
     </p>
   </div>
 </footer>
-
-
-
-
-{{!-- </body>
-
-</html> --}}

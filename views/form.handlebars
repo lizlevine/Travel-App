@@ -13,44 +13,156 @@
 
 <body> --}}
 
-{{!-- <!-- Sign up form --> --}}
-<div class="main">
+{{!-- navbar from other trips & index --}}
 
-  <section class="sign-in" style="padding-top: 50px;">
-    <div class="container">
-      <div class="signin-content">
-        <div class="signin-image">
-          <figure id="logo">
-            <img src="assets/images/luggage_logo.png" alt="sign up image" style="" />
-          </figure>
-          <a href="/register" class="signup-image-link">Create an account</a>
-        </div>
+<nav class="navbar is-white" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <img src="assets/images/luggage_logo.png" id="logo" class="suitcase" alt="suitcase">
 
-        <div class="signin-form">
-          <h2 class="form-title">Log In</h2>
-          <form action="/api/users/" method="POST" class="register-form" id="login-form">
-            <div class="form-group">
-              <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-              <input type="email" name="email" id="email" placeholder="email" required />
-            </div>
-            <div class="form-group">
-              <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
-              <input type="password" name="password" id="userPass" placeholder="password" required />
-            </div>
 
-            <div class="form-group">
-              <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
-              <label for="remember-me" class="label-agree-term">Remember me</label>
-            </div>
-            <div class="form-group form-button">
-              <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" />
-            </div>
-          </form>
-        </div>
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+      data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a href="index.html" class="navbar-item">
+
+      </a>
+      <a href="home.html" class="navbar-item">
+
+      </a>
+      <a href="trips.html" class="navbar-item">
+        My Trips
+      </a>
+      <a href="packinglist.html" class="navbar-item">
+        Packing List
+      </a>
+
+      <a href="activities.html" class="navbar-item">
+        Activities
+      </a>
+
+      <a href="departure.html" class="navbar-item">
+        Departure Countdown
+      </a>
+
+    </div>
+  </div>
+  <div class="navbar-end">
+    <div class="navbar-item">
+      <div class="buttons">
+        <a href="/sign-up">
+          <button class="button is-info is-outlined">Sign up</button></a>
+        <a href="/trips"><button class="button is-info is-outlined">My trips</button></a>
       </div>
     </div>
-  </section>
+  </div>
+</nav>
+
+{{!-- <!-- Sign up form --> --}}
+
+<section class="sign-in">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Where in the world are you going?
+      </h1>
+      {{!--       
+<div class="main"> --}}
+    </div>
+
+    <div id="main-container" class="container-home">
+      <section class="main-container">
+        <figure id="globe">
+          <img src="assets/images/globe4_logo.jpg" id="globe" class="suitcase" alt="globe" />
+        </figure>
+        <a href="/register" class="signup-image-link">Create an account</a>
+
+
+
+        {{!-- <section class="sign-in" style="padding-top: 50px;">
+      <div class="container">
+        <div class="signin-content">
+          <div class="signin-image">
+            <figure id="logo">
+              <img src="assets/images/luggage_logo.png" alt="sign up image" style="" />
+            </figure>
+            <a href="/register" class="signup-image-link">Create an account</a>
+          </div> --}}
+
+        {{!-- <div class="signin-form"> --}}
+        {{!-- <h2 class="form-title">Check-in</h2> --}}
+
+        <form action="/api/users/" method="POST" class="register-form" id="login-form">
+          {{!-- <div class="form-group"> --}}
+          {{!-- <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label> --}}
+          <ul>
+            <li>
+              <label for="your_name">email</label>
+              <input type="email" name="email" id="email" placeholder="email" required />
+            </li>
+
+            {{!-- </div> --}}
+            {{!-- <div class="form-group"> --}}
+            {{!-- <label for="your_pass"><i class="zmdi zmdi-lock"></i></label> --}}
+            <li>
+              <label for="your_pass">password</label>
+              <input type="password" name="password" id="userPass" placeholder="password" required />
+              {{!-- </div> --}}
+            </li>
+          </ul>
+
+
+          <div class="form-group">
+            <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+            <label for="remember-me" class="label-agree-term">Remember me</label>
+          </div>
+          {{!-- <div class="form-group form-button">
+            <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" />
+          </div> --}}
+
+          <button id="check-in-button">Check-in</button>
+    </div>
+</section>
+</form>
+
 </div>
+
+
+</section>
+
+
+
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>"Check-in" with us to receive the latest <strong>promos</strong> and travel swag.</p>
+
+    <div id="connect">
+      {{!-- <h6>"Check-in" with us for <strong>promos</strong> and travel swag!</h6> --}}
+      <img src="assets/images/pintrest.png" class="social" alt="Pintrest icon" />
+      <img src="assets/images/fb_logo.png" class="social" alt="Facebook icon" />
+      <img src="assets/images/airbnb.png" class="social" alt="Airbnb icon" />
+      <img src="assets/images/instagram.png" class="social" alt="Instagram icon" />
+      <img src="assets/images/yelp.png" class="social" alt="Yelp icon" />
+    </div>
+
+    <p id="copyright">
+      &copy; Copyright 2020 Get Your Trip Together!
+    </p>
+  </div>
+</footer>
+
+
+
+
+
+
 
 <!-- js api call -->
 {{!-- <script>

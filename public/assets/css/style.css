@@ -117,15 +117,16 @@ h5 {
   max-height: 500px;
   max-width: 850px;
   overflow-y: scroll;
+
   /* max-height: 365px; */
 }
 
-#carousel {
-  max-height: 800px;
-  /* overflow-y: scroll; */
-  width: 900px;
+/* #carousel {
+  max-height: 800px; */
+/* overflow-y: scroll; */
+/* width: 900px;
   margin: 0 50px 10px 30px;
-}
+} */
 
 .navbar {
   height: 100px;
@@ -148,20 +149,19 @@ h5 {
   cursor: pointer;
 }
 
-#globe {
-  height: 100px;
-  width: 100px;
-}
+/* 
+#globe img:hover {
+  transform: scale(1.25); */
 
 #logo img:hover {
   transform: scale(1.25);
 }
 
-#welcome-home {
-  /* margin: 20px 0; */
-  margin: 0 auto;
+/* #welcome-home { */
+/* margin: 20px 0; */
+/* margin: 0 auto;
   margin-bottom: 40px;
-}
+} */
 
 #home-image {
   display: flex;
@@ -214,14 +214,14 @@ h5 {
   cursor: pointer;
 }
 
-#pets-list > li {
-  margin-bottom: 20px;
-  display: inline-block;
-  margin-left: 10px;
-  text-align: center;
-}
-
 /* trips form */
+
+#globe {
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
 
 #message {
   height: 150px;
@@ -250,4 +250,41 @@ h5 {
 
 #destination {
   margin-right: 20px;
+}
+
+/* sign-in form */
+
+#check-in-button {
+  /* padding: 10px; */
+  background-color: lightcyan;
+  border: solid 2px lightgrey;
+  cursor: pointer;
+  height: 30px;
+  width: 80px;
+  margin-left: 350px;
+  margin-top: 20px;
+}
+
+#userPass {
+  height: 25px;
+  width: 100px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
+  cursor: pointer;
+  border: solid 1px lightgrey;
+}
+
+#email {
+  /* height: 30px;
+  width: 100px; */
+  height: 25px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: solid 1px lightgrey;
+}
+
+.signup-image-link {
+  color: orangered;
 }
