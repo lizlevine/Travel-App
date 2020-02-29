@@ -8,38 +8,38 @@ router
     res.json(trips);
   })
   .post((req, res) => {
-    console.log(req.body);
+    // console.log(`[DEBUG] creating trip with :: ${req.body}`);
     const result = db.Trip.create({
       name: req.body.name,
-      notes: req.body.notes,
-      UserId: req.body.UserId
+      notes: req.body.notes
     });
     res.redirect("/");
   });
 
-router.route("/:id").put(async (req, res) => {
-  const updatedTrip = await db.Trip.update(
-    {
-      name: req.body.name,
-      notes: req.body.notes
-    },
-    {
+router
+  .route("/:id")
+  .put(async (req, res) => {
+    const updatedTrip = await db.Trip.update(
+      {
+        name: req.body.name,
+        notes: req.body.notes
+      },
+      {
+        where: {
+          id: req.params.id
+        }
+      }
+    );
+    console.log("Error", updatedTrip);
+    res.json(updatedTrip);
+  })
+  .delete(async (req, res) => {
+    const deletedTrip = await db.Trip.destroy({
       where: {
         id: req.params.id
       }
-    }
-  );
-  console.log("Error", updatedTrip);
-  res.json(updatedTrip);
-});
-
-router.route("/:id").delete(async (req, res) => {
-  const deletedTrip = await db.Trip.destroy({
-    where: {
-      id: req.params.id
-    }
+    });
+    res.json(deletedTrip);
   });
-  res.json(deletedTrip);
-});
 
 module.exports = router;

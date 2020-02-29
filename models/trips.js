@@ -4,13 +4,13 @@ module.exports = function(sequelize, DataTypes) {
     notes: DataTypes.STRING(3500)
   });
 
-  Trip.associate = function(models) {
-    Trip.belongsTo(models.User, {
-      foreignKey: {
-        allowNull: false
-      }
-    });
-  };
+  // Trip.associate = function(models) {
+  //   Trip.belongsTo(models.User, {
+  //     foreignKey: {
+  //       allowNull: false
+  //     }
+  //   });
+  // };
 
   return Trip;
 };
