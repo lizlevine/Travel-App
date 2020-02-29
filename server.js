@@ -7,6 +7,7 @@ const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const exphbs = require("express-handlebars");
 const db = require("./models");
+require("dotenv").config();
 // const dotenv = require('dotenv').config()
 
 const app = express();
@@ -19,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(__dirname + "/public"));
 
 app.get("/trips", (req, res) => {
-  res.render("trips");
+  res.render("cards");
 });
 // below gets data from form.handlebars
 app.get("/sign-up", (req, res) => {
@@ -27,6 +28,10 @@ app.get("/sign-up", (req, res) => {
 });
 app.get("/", (req, res) => {
   res.render("index");
+});
+
+app.get("/add-trips", (req, res) => {
+  res.render("trips");
 });
 
 app.use(require("./routes"));
