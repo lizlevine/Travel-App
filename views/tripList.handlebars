@@ -1,0 +1,31 @@
+<section class="section">
+    <div class="container">
+        <h1 class="title">Where in the world are you going?</h1>
+        {{#each trips}}
+        <div class="card">
+            <div class="card-content">
+                <h1 id="destination-title">
+                    <strong>
+                        {{this.dataValues.name}}
+                    </strong>
+                </h1>
+                <p class="title">
+                    {{this.dataValues.notes}}
+                </p>
+            </div>
+            <footer class="card-footer">
+                <p class="card-footer-item">
+                    <span>
+                        View on
+                        <a href="/trips/{{this.dataValues.id}}">Contribute here!</a>
+                    </span>
+                </p>
+                <p class="card-footer-item">
+                    <span> Share on <a href="#">Facebook</a> </span>
+                </p>
+            </footer>
+        </div>
+        <br>
+        {{/each}}
+    </div>
+</section>

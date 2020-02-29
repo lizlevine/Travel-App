@@ -19,8 +19,18 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(__dirname + "/public"));
 
-app.get("/trips", (req, res) => {
-  res.render("cards");
+app.get("/trips", async (req, res) => {
+  const trips = await db.Trip.findAll();
+  console.log("[DEBUG] /trips :: ", trips);
+  res.render("tripList", {
+    trips: trips
+  });
+});
+
+app.get("/trips/:id", async (req, res) => {
+  const trip = await db.Trip.findByPk(req.params.id);
+  console.log("[DEBUG] /trips/:id :: ", trip);
+  res.render("tripDetail", { trip: trip });
 });
 // below gets data from form.handlebars
 app.get("/sign-up", (req, res) => {

@@ -13,12 +13,12 @@ router
       name: req.body.name,
       notes: req.body.notes
     });
-    res.redirect("/");
+    res.redirect("/trips");
   });
 
 router
   .route("/:id")
-  .put(async (req, res) => {
+  .post(async (req, res) => {
     const updatedTrip = await db.Trip.update(
       {
         name: req.body.name,
@@ -31,7 +31,7 @@ router
       }
     );
     console.log("Error", updatedTrip);
-    res.json(updatedTrip);
+    res.redirect(`/trips/${req.params.id}`);
   })
   .delete(async (req, res) => {
     const deletedTrip = await db.Trip.destroy({
