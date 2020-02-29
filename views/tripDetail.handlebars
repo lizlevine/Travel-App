@@ -1,0 +1,10 @@
+<section>
+    <h2 id="notes">{{trip.dataValues.name}}</h2>
+    <form action="/api/trips/{{trip.dataValues.id}}" method="POST" class="register-form" id="login-form">
+        <label id="note-label">Notes</label>
+        <textarea id="message" name="notes" required="required">
+                {{trip.dataValues.notes}}
+        </textarea>
+        <button id="button">Save</button>
+    </form>
+</section>

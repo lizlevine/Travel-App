@@ -40,12 +40,49 @@
 </head>
 
 <body>
+    <nav class="navbar is-white" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <img src="./images/luggage_logo.png" id="logo" class="suitcase" alt="suitcase" />
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="index.html" class="navbar-item"> </a>
+                <a href="home.html" class="navbar-item"> </a>
+                <a href="trips.html" class="navbar-item">
+                    My Trips
+                </a>
+                <a href="packinglist.html" class="navbar-item">
+                    Packing List
+                </a>
+
+                <a href="activities.html" class="navbar-item">
+                    Activities
+                </a>
+
+                <a href="departure.html" class="navbar-item">
+                    Departure Countdown
+                </a>
+            </div>
+        </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a href="/">
+                        <button class="button is-info is-outlined">Back Home</button></a>
+                    <a href="/add-trips"><button class="button is-info is-outlined">Add Trip</button></a>
+                </div>
+            </div>
+        </div>
+    </nav>
     {{{body}}}
-
-    {{!-- Add in jQuery --}}
-    {{!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="/assets/js/script.js"></script> --}}
-
 </body>
 
 </html>
