@@ -5,28 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Your Trip Together!</title>
-    <!-- Bootstrap CSS -->
-    {{!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" /> --}}
-
-    {{!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> --}}
-
     {{!-- Bulma css library --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
-    {{!-- animate --}}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-
     {{!-- css --}}
 
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
-    {{!-- <link href="https://fonts.googleapis.com/css?family=Prompt|Quicksand&display=swap" rel="stylesheet"> --}}
+    <link href="https://fonts.googleapis.com/css?family=Prompt|Quicksand&display=swap" rel="stylesheet">
 
-    {{!-- referrence to jQuery --}}
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    {{!-- reference to jQuery --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
@@ -42,20 +31,12 @@
 <body>
     <nav class="navbar is-white" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <img src="./images/luggage_logo.png" id="logo" class="suitcase" alt="suitcase" />
-
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-                data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
+            <a href="/"><img src="assets/images/luggage_logo.png" id="logo" class="suitcase" alt="suitcase" /></a>
+            
         </div>
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <a href="index.html" class="navbar-item"> </a>
-                <a href="home.html" class="navbar-item"> </a>
                 <a href="trips.html" class="navbar-item">
                     My Trips
                 </a>
@@ -72,12 +53,16 @@
                 </a>
             </div>
         </div>
+
         <div class="navbar-end">
             <div class="navbar-item">
                 <div class="buttons">
-                    <a href="/">
-                        <button class="button is-info is-outlined">Back Home</button></a>
-                    <a href="/add-trips"><button class="button is-info is-outlined">Add Trip</button></a>
+                    <a href="/trips" class="button is-primary">
+                        <strong>Trips</strong>
+                    </a>
+                    <a href="/add-trips" class="button is-light">
+                        Add Trip
+                    </a>
                 </div>
             </div>
         </div>

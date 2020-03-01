@@ -4,7 +4,7 @@
 
 body {
   background-image: url("../images/plane_40.png");
-  border-top: 4px solid palegoldenrod;
+  font-family: "Prompt", Helvetica, Arial, sans-serif;
 }
 
 .sidebar {
@@ -21,7 +21,6 @@ body {
 h1,
 .sidebar,
 h4 {
-  border-bottom: 2px solid #eee;
   padding-bottom: 20px;
   margin-bottom: 15px;
   margin-right: 20px;
@@ -129,10 +128,8 @@ h5 {
 } */
 
 .navbar {
-  height: 100px;
   width: 100%;
   background-color: #dddddd;
-  border-bottom: 2px solid palegoldenrod;
 }
 
 /* .navbar-item img:hover {
@@ -145,7 +142,7 @@ h5 {
 
 #logo {
   margin: 15px 20px 20px 40px;
-  height: 80px;
+  height: 40px;
   cursor: pointer;
 }
 
