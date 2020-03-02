@@ -4,15 +4,14 @@
 
 body {
   background-image: url("../images/plane_40.png");
-  font-family: "Prompt", Helvetica, Arial, sans-serif;
-  /* font-family: "Sigmar One"; */
-  /* font-family: "Carter One"; */
-  /* font-family: "Faster One"; */
   /* font-family: "Racing Sans One"; */
-  /* font-family: "Wendy One"; */
-
   overflow-y: scroll;
 }
+/* font-family: "Prompt", Helvetica, Arial, sans-serif; */
+/* font-family: "Sigmar One"; */
+/* font-family: "Carter One"; */
+/* font-family: "Faster One"; */
+/* font-family: "Wendy One"; */
 
 .sidebar {
   background: #fff;
@@ -91,12 +90,12 @@ h5 {
   /* font-family: "Wendy One"; */
 }
 
-.spec-font {
-  /* font-family: "Racing Sans One"; */
+/* .spec-font { */
+/* font-family: "Racing Sans One"; */
 
-  /* font-family: "Carter One"; */
-  /* font-family: "Wendy One"; */
-}
+/* font-family: "Carter One"; */
+/* font-family: "Wendy One"; */
+/* } */
 
 .social {
   width: 20px;
@@ -276,6 +275,18 @@ h5 {
   margin-bottom: 10px;
 }
 
+/* final card content style */
+
+.card-content {
+  /* font-family: "Wendy One"; */
+  /* font-family: "Racing Sans One"; */
+  /* font-family: "Titillium Web"; */
+  font-family: "Quicksand";
+}
+.card-footer-item {
+  font-family: "Quicksand";
+  font-size: small;
+}
 /* sign-in form */
 
 #check-in-button {
