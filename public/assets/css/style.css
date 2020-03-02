@@ -87,7 +87,9 @@ h5 {
 
 .title {
   padding-top: 40px;
+  /* color: #444444; */
   /* font-family: "Wendy One"; */
+  font-family: "Faster One";
 }
 
 /* .spec-font { */
@@ -155,9 +157,9 @@ h5 {
   background-color: #dddddd;
 }
 
-/* .navbar-item img:hover {
-  transform: scale(1.25);
-} */
+.navbar-item:hover {
+  transform: scale(1.1);
+}
 
 .buttons {
   margin-right: 40px;
@@ -173,7 +175,15 @@ h5 {
 #globe img:hover {
   transform: scale(1.25); */
 
-#logo img:hover {
+#logo:hover {
+  transform: scale(1.25);
+}
+
+#globe:hover {
+  transform: scale(1.25);
+}
+
+#button:hover {
   transform: scale(1.25);
 }
 
@@ -224,17 +234,6 @@ h5 {
   cursor: pointer;
 }
 
-#button {
-  margin-left: 143px;
-  margin-top: 20px;
-  width: 80px;
-  height: 35px;
-  padding: 10px;
-  background-color: palegoldenrod;
-  border: solid 2px lightgrey;
-  cursor: pointer;
-}
-
 /* trips form */
 
 #globe {
@@ -271,8 +270,24 @@ h5 {
 }
 
 #destination {
-  margin-right: 52px;
+  margin-right: 46px;
   margin-bottom: 10px;
+}
+
+#button {
+  margin-left: 143px;
+  margin-top: 20px;
+  width: 80px;
+  height: 35px;
+  padding: 10px;
+  background-color: palegoldenrod;
+  border: solid 2px lightgrey;
+  cursor: pointer;
+}
+
+.subtitle {
+  font: xxx-large;
+  color: darkcyan;
 }
 
 /* final card content style */
@@ -287,10 +302,14 @@ h5 {
   font-family: "Quicksand";
   font-size: small;
 }
+
+/* #title {
+  font-family: "Faster One";
+} */
+
 /* sign-in form */
 
 #check-in-button {
-  /* padding: 10px; */
   background-color: lightcyan;
   border: solid 2px lightgrey;
   cursor: pointer;
@@ -311,8 +330,6 @@ h5 {
 }
 
 #email {
-  /* height: 30px;
-  width: 100px; */
   height: 25px;
   margin-top: 30px;
   margin-bottom: 10px;
