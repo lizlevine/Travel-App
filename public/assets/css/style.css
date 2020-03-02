@@ -5,6 +5,7 @@
 body {
   background-image: url("../images/plane_40.png");
   /* font-family: "Racing Sans One"; */
+
   overflow-y: scroll;
 }
 /* font-family: "Prompt", Helvetica, Arial, sans-serif; */
@@ -76,6 +77,7 @@ h5 {
 
 .main-container {
   /* background-color: #eeeeee; */
+
   background-image: url("../images/plane_20.png");
   max-height: 500px;
   padding: 30px;
@@ -83,6 +85,7 @@ h5 {
   overflow-y: scroll;
   height: 900px;
   width: 1000px;
+
 }
 
 .title {
@@ -138,12 +141,16 @@ h5 {
     } */
 
 /* #main-container {
+
   max-height: 500px;
   max-width: 850px;
+
   overflow-y: scroll;
+} */
 
   max-height: 365px;
 } */
+
 
 /* #carousel {
   max-height: 800px; */
@@ -234,6 +241,18 @@ h5 {
   cursor: pointer;
 }
 
+
+#button {
+  margin-left: 143px;
+  margin-top: 20px;
+  width: 80px;
+  height: 35px;
+  padding: 10px;
+  background-color: palegoldenrod;
+  border: solid 2px lightgrey;
+  cursor: pointer;
+}
+
 /* trips form */
 
 #globe {
@@ -270,6 +289,7 @@ h5 {
 }
 
 #destination {
+
   margin-right: 46px;
   margin-bottom: 10px;
 }
@@ -288,6 +308,7 @@ h5 {
 .subtitle {
   font: xxx-large;
   color: darkcyan;
+
 }
 
 /* final card content style */
