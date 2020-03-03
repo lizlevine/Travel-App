@@ -4,6 +4,9 @@
 
 body {
 
+  background-image: url("../images/plane_40.png");
+
+
   overflow-y: scroll;
   font-family: "Quicksand";
 }
