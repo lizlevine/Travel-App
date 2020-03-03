@@ -3,16 +3,10 @@
 }
 
 body {
-  background-image: url("../images/plane_40.png");
-  /* font-family: "Racing Sans One"; */
 
   overflow-y: scroll;
+  font-family: "Quicksand";
 }
-/* font-family: "Prompt", Helvetica, Arial, sans-serif; */
-/* font-family: "Sigmar One"; */
-/* font-family: "Carter One"; */
-/* font-family: "Faster One"; */
-/* font-family: "Wendy One"; */
 
 .sidebar {
   background: #fff;
@@ -43,25 +37,9 @@ h5 {
   text-align: center;
 }
 
-#vision-mission {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
 .subtitle {
   font-size: 20px;
 }
-
-/* #container {
-      background-color: #ffffff;
-      padding: 30px;
-      margin: 0 40px 50px 350px;
-      width: 100%;
-      max-width: 960px;
-      float: left;
-      border: 1px solid #ddd;
-      clear: both;
-    } */
 
 /* these styles taken from basic portfolio format*/
 
@@ -72,7 +50,6 @@ h5 {
   margin: 0 auto;
   clear: both;
   padding-bottom: 150px;
-  /* padding-bottom: 100px; */
 }
 
 .main-container {
@@ -90,17 +67,15 @@ h5 {
 
 .title {
   padding-top: 40px;
-  /* color: #444444; */
-  /* font-family: "Wendy One"; */
-  font-family: "Faster One";
 }
 
-/* .spec-font { */
-/* font-family: "Racing Sans One"; */
-
-/* font-family: "Carter One"; */
-/* font-family: "Wendy One"; */
-/* } */
+.headline {
+  font-family: "Seymour One";
+  font-size: 30px;
+  /* font-size: 200%; */
+  padding-top: 50px;
+  /* margin-top: 50px; */
+}
 
 .social {
   width: 20px;
@@ -117,55 +92,20 @@ h5 {
   transform: scale(1.25);
 }
 
-.portrait {
-  width: 200;
-  height: 200;
-  /* padding: 5px; */
-  /* margin: 2px 3px; */
-  margin: 3px 2px 2px 2px;
-  cursor: pointer;
-}
-
-/* below are the styles for rescue me gallery */
-
-/* #container-rescue {
-      max-height: 365px;
-      max-height: 500px;
-      overflow-y: scroll;
-    } */
-
-/* #main-container {
-      /* max-height: 365px; */
-/* max-height: 500px;
-      overflow-y: scroll;
-    } */
-
-/* #main-container {
-
-  max-height: 500px;
-  max-width: 850px;
-
-  overflow-y: scroll;
-} */
-
-  max-height: 365px;
-} */
-
-
-/* #carousel {
-  max-height: 800px; */
-/* overflow-y: scroll; */
-/* width: 900px;
-  margin: 0 50px 10px 30px;
-} */
 
 .navbar {
   width: 100%;
   background-color: #dddddd;
+  /* font-family: "Quicksand"; */
+  font-weight: 400;
 }
 
 .navbar-item:hover {
   transform: scale(1.1);
+}
+
+.navbar-item {
+  font-weight: 500;
 }
 
 .buttons {
@@ -178,10 +118,6 @@ h5 {
   cursor: pointer;
 }
 
-/* 
-#globe img:hover {
-  transform: scale(1.25); */
-
 #logo:hover {
   transform: scale(1.25);
 }
@@ -193,12 +129,6 @@ h5 {
 #button:hover {
   transform: scale(1.25);
 }
-
-/* #welcome-home { */
-/* margin: 20px 0; */
-/* margin: 0 auto;
-  margin-bottom: 40px;
-} */
 
 #home-image {
   display: flex;
@@ -227,32 +157,6 @@ h5 {
   margin-bottom: 10px;
 }
 
-.questionnaire {
-  margin-left: 50px;
-  line-height: 1.5;
-  font-size: 15px;
-  /* text-align: center; */
-}
-
-#submitform {
-  margin-bottom: 25px;
-  background-color: lightcyan;
-  border: solid 1px lightgrey;
-  cursor: pointer;
-}
-
-
-#button {
-  margin-left: 143px;
-  margin-top: 20px;
-  width: 80px;
-  height: 35px;
-  padding: 10px;
-  background-color: palegoldenrod;
-  border: solid 2px lightgrey;
-  cursor: pointer;
-}
-
 /* trips form */
 
 #globe {
@@ -263,7 +167,7 @@ h5 {
 }
 
 #message {
-  height: 150px;
+  height: 120px;
   width: 580px;
   cursor: pointer;
   border: solid 1px lightgrey;
@@ -295,38 +199,34 @@ h5 {
 }
 
 #button {
-  margin-left: 143px;
-  margin-top: 20px;
+  margin-left: 135px;
+  margin-top: 10px;
   width: 80px;
-  height: 35px;
-  padding: 10px;
-  background-color: palegoldenrod;
+  height: 30px;
+  padding: 7px;
+  background-color: lightgoldenrodyellow;
   border: solid 2px lightgrey;
   cursor: pointer;
 }
 
 .subtitle {
-  font: xxx-large;
+  font: 10px;
   color: darkcyan;
+
+  font-family: "Seymour One";
 
 }
 
 /* final card content style */
 
 .card-content {
-  /* font-family: "Wendy One"; */
-  /* font-family: "Racing Sans One"; */
-  /* font-family: "Titillium Web"; */
   font-family: "Quicksand";
 }
+
 .card-footer-item {
   font-family: "Quicksand";
   font-size: small;
 }
-
-/* #title {
-  font-family: "Faster One";
-} */
 
 /* sign-in form */
 
@@ -359,5 +259,5 @@ h5 {
 }
 
 .signup-image-link {
-  color: orangered;
+  color: tomato;
 }
