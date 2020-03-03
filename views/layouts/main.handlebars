@@ -12,7 +12,19 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
-    <link href="https://fonts.googleapis.com/css?family=Prompt|Quicksand&display=swap" rel="stylesheet">
+    {{!-- google fonts below --}}
+
+    {{!-- <link href="https://fonts.googleapis.com/css?family=Prompt|Quicksand&display=swap" rel="stylesheet"> --}}
+    <link
+        href="https://fonts.googleapis.com/css?family=Carter+One|Faster+One|Racing+Sans+One|Sigmar+One|Wendy+One&display=swap">
+
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Chewy|Cinzel|Cormorant+Garamond|Gruppo|Muli|PT+Sans|Quicksand|Titillium+Web&display=swap"
+        rel="stylesheet">
+
+
+
 
     {{!-- reference to jQuery --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -37,19 +49,22 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <a href="trips.html" class="navbar-item">
+                <a href="#" class="navbar-item">
                     My Trips
                 </a>
-                <a href="packinglist.html" class="navbar-item">
+                <a href="#" class="navbar-item">
                     Packing List
                 </a>
 
-                <a href="activities.html" class="navbar-item">
-                    Activities
+                <a href="#" class="navbar-item">
+                    Bucket List
                 </a>
 
-                <a href="departure.html" class="navbar-item">
+                <a href="#" class="navbar-item">
                     Departure Countdown
+                </a>
+                <a href="#" class="navbar-item">
+                    Random Notes
                 </a>
             </div>
         </div>
@@ -57,10 +72,12 @@
         <div class="navbar-end">
             <div class="navbar-item">
                 <div class="buttons">
-                    <a href="/trips" class="button is-primary">
+
+                    <a href="/trips" class="button is-info is-outlined">
+
                         <strong>Destinations</strong>
                     </a>
-                    <a href="/add-trips" class="button is-light">
+                    <a href="/add-trips" class="button is-outlined">
                         Add Trip
                     </a>
                 </div>
