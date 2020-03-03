@@ -3,7 +3,9 @@
 }
 
 body {
+
   background-image: url("../images/plane_40.png");
+
 
   overflow-y: scroll;
   font-family: "Quicksand";
@@ -55,6 +57,7 @@ h5 {
 
 .main-container {
   /* background-color: #eeeeee; */
+
   background-image: url("../images/plane_20.png");
   max-height: 500px;
   padding: 30px;
@@ -62,6 +65,7 @@ h5 {
   overflow-y: scroll;
   height: 900px;
   width: 1000px;
+
 }
 
 .title {
@@ -90,6 +94,7 @@ h5 {
 #connect img:hover {
   transform: scale(1.25);
 }
+
 
 .navbar {
   width: 100%;
@@ -191,6 +196,7 @@ h5 {
 }
 
 #destination {
+
   margin-right: 46px;
   margin-bottom: 10px;
 }
@@ -209,7 +215,9 @@ h5 {
 .subtitle {
   font: 10px;
   color: darkcyan;
+
   font-family: "Seymour One";
+
 }
 
 /* final card content style */
