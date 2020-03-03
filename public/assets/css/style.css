@@ -38,25 +38,9 @@ h5 {
   text-align: center;
 }
 
-#vision-mission {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
 .subtitle {
   font-size: 20px;
 }
-
-/* #container {
-      background-color: #ffffff;
-      padding: 30px;
-      margin: 0 40px 50px 350px;
-      width: 100%;
-      max-width: 960px;
-      float: left;
-      border: 1px solid #ddd;
-      clear: both;
-    } */
 
 /* these styles taken from basic portfolio format*/
 
@@ -67,7 +51,6 @@ h5 {
   margin: 0 auto;
   clear: both;
   padding-bottom: 150px;
-  /* padding-bottom: 100px; */
 }
 
 .main-container {
@@ -106,15 +89,6 @@ h5 {
 
 #connect img:hover {
   transform: scale(1.25);
-}
-
-.portrait {
-  width: 200;
-  height: 200;
-  /* padding: 5px; */
-  /* margin: 2px 3px; */
-  margin: 3px 2px 2px 2px;
-  cursor: pointer;
 }
 
 .navbar {
@@ -181,19 +155,6 @@ h5 {
   margin-bottom: 10px;
 }
 
-.questionnaire {
-  margin-left: 50px;
-  line-height: 1.5;
-  font-size: 15px;
-}
-
-#submitform {
-  margin-bottom: 25px;
-  background-color: lightcyan;
-  border: solid 1px lightgrey;
-  cursor: pointer;
-}
-
 /* trips form */
 
 #globe {
@@ -204,7 +165,7 @@ h5 {
 }
 
 #message {
-  height: 150px;
+  height: 120px;
   width: 580px;
   cursor: pointer;
   border: solid 1px lightgrey;
@@ -235,12 +196,12 @@ h5 {
 }
 
 #button {
-  margin-left: 143px;
-  margin-top: 20px;
+  margin-left: 135px;
+  margin-top: 10px;
   width: 80px;
-  height: 35px;
-  padding: 10px;
-  background-color: palegoldenrod;
+  height: 30px;
+  padding: 7px;
+  background-color: lightgoldenrodyellow;
   border: solid 2px lightgrey;
   cursor: pointer;
 }
@@ -254,11 +215,9 @@ h5 {
 /* final card content style */
 
 .card-content {
-  /* font-family: "Wendy One"; */
-  /* font-family: "Racing Sans One"; */
-  /* font-family: "Titillium Web"; */
   font-family: "Quicksand";
 }
+
 .card-footer-item {
   font-family: "Quicksand";
   font-size: small;
@@ -295,5 +254,5 @@ h5 {
 }
 
 .signup-image-link {
-  color: orangered;
+  color: tomato;
 }
