@@ -1,0 +1,59 @@
+<script>
+    $(()=> {
+        $(document).ready(function () {
+            $('.modal').addClass('is-active');
+        });
+
+
+
+        $('#login').click((e) => {
+            e.preventDefault();
+            var userName = $('#userName').val();
+            var password = $('#pswd').val();
+            if (userName === "admin" && password === "1234") {
+
+                $('.modal').removeClass('is-active');
+                location.href = "/admin/events";
+            } else {
+                alert("Invalid Credentials");
+            }
+        });
+    })
+</script>
+
+<div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            <div class="field">
+                <h1>Administrator Only</h1>
+                <p class="control has-icons-left has-icons-right">
+                    <input class="input" id="userName" type="text" placeholder="Username">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                        <i class="fas fa-check"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="field">
+                <p class="control has-icons-left">
+                    <input class="input" id="pswd" type="password" placeholder="Password">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="field">
+                <p class="control">
+                    <button class="button is-success" id="login">
+                        Login
+                    </button>
+                </p>
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+    </div>
+</div>
+

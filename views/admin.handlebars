@@ -1,0 +1,49 @@
+<script type="text/javascript">
+    $(() => {
+        
+
+        function deleteTrip(id, url) {
+            
+            return fetch(url + '/' + id, { method: 'delete' }).then(res => res.json().then(json => { return json; }));
+            
+
+        }
+
+        $(".destroy").click((e) => {
+            var id = e.target.attributes["linkId"].value;
+            var url = "http://localhost:8080/api/trips/";
+            deleteTrip(id, url);
+            location.reload();
+            
+            
+        });
+
+    });
+</script>
+
+
+
+<section class="section">
+    <div class="container">
+
+        {{#each trips}}
+        <div class="card">
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-content">
+                        <p class="title is-4">{{this.dataValues.name}}</p>
+                    </div>
+                </div>
+
+            </div>
+            <footer class="card-footer">
+                <p class="card-footer-item">
+                    <button id="delete" class="destroy" linkId="{{this.dataValues.id}}">Delete Trip</button>
+                </p>
+            </footer>
+        </div>
+        <br>
+        {{/each}}
+    </div>
+
+</section>
