@@ -42,7 +42,7 @@ app.get("/", (req, res) => {
 
 app.get("/admin", (req, res) => {
   res.render("adminlogin");
-})
+});
 app.get("/admin/events", async (req, res) => {
   const trips = await db.Trip.findAll();
   res.render("admin", {
@@ -57,7 +57,8 @@ app.use(require("./routes"));
 
 db.sequelize.sync();
 
-app.listen(process.env.PORT || 8080, () => {
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
   if (process.env.PORT) {
     console.log(
       `[START] server started successfully on port ${process.env.PORT}`
