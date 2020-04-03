@@ -1,5 +1,5 @@
 "use strict";
-
+// this file loops through all of the models (not just userdb)
 const fs = require("fs");
 const path = require("path");
 const Sequelize = require("sequelize");
