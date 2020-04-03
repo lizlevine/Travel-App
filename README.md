@@ -9,11 +9,12 @@ If they click on "contribute here", a pop-up modal will appear where they can sh
 ## Building GYTT:
 
 - Express Server
-- Handlebars templating engine
 - Morgan, middleware downloaded through npm
 - MySQL database
 - Sequelize ORM
+- Handlebars templating engine (frontend)
 - Bootstrap CDN
+- JAWSDB & Heroku, deployment
 
 ##### User arrives at home page and is prompted to either search existing trips or add their own:
 
