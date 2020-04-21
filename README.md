@@ -1,4 +1,5 @@
 # Get Your Trip Together!
+(https://get-your-trip-together.herokuapp.com/)
 
 Get your Trip Together is a travel app social platform built using Node.js and Express server. It is designed to have the user search for a destination, make a contribution, or create their own destination.
 
